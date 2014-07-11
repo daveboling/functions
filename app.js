@@ -14,7 +14,14 @@ b = square(5);
 console.log("Square of 5: " + b);
 
 //Area function
-console.log(area(50, 50));
+console.log("Area of L:50, W:50 Area = " + area(50, 50));
 
-//Volum function
-console.log(volume(50, 50, 10));
+//Volume function
+console.log("Volume of L:50, W:50, H:10 Volume = " + volume(50, 50, 10));
+
+//Nested functions
+var z = area(square(increment(3) + increment(4)), square(2));
+console.log("Next function called: z = " z);
+
+
+
