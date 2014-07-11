@@ -21,7 +21,7 @@ console.log("Volume of L:50, W:50, H:10 Volume = " + volume(50, 50, 10));
 
 //Nested functions
 var z = area(square(increment(3) + increment(4)), square(2));
-console.log("Next function called: z = " z);
+console.log("Next function called: z = " + z);
 
 
 
