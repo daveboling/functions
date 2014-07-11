@@ -68,11 +68,33 @@ console.log(letter(gradePrompt));
 //Calculate tax function
 function addTax(number, percent){
 	percent = percent / 100;
-	number *= percent;
-	return number;
+	var tax = 0;
+	tax = number * percent;
+	return number + tax;
 } 
 
-console.log('You will owe $' + addTax(200, 10) + ' in tax.');
+console.log('You will owe $' + addTax(200, 10) + ' with tax.');
+
+
+//Array Sum Function
+function sum(arr){
+	var total = 0;
+	for (var i = 0; i < arr.length; i++){
+		total += arr[i];
+	}
+
+	return total;
+}
+
+var sumthin = [5, 5, 5, 5, 5, 5, 5, 5, 45];
+
+console.log('The sum of your array is: ' + sum(sumthin));
+
+
+
+
+
+
 
 
 
