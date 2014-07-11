@@ -43,7 +43,7 @@ console.log(canDrinkBool(20)); //returns false
 
 //var gradePrompt = prompt('Enter a number 0-100 to determine the grade: ');
 var gradePrompt = prompt('Enter a number 0-100 to determine the grade: ');
-	gradePrompt = parseInt(gradePrompt);
+gradePrompt = parseInt(gradePrompt);
 
 //Letter grade function
 function letter(grade){
@@ -56,7 +56,7 @@ function letter(grade){
 	}
 
 	if(grade >= 90) { return 'A'}
-	else if (grade >= 80) { return 'B'; }
+		else if (grade >= 80) { return 'B'; }
 	else if (grade >= 70) { return 'C'; }
 	else if (grade >= 60) { return 'D'; }
 	else { return 'F'; }
@@ -102,11 +102,11 @@ do this, then it would be 5*5*4*3*2*1 or it would not be correct.
 
 */
 function factorial(num) {
-  for ( var i = num - 1; i > 1; i--){
-    num = num * i;
-  }
-  if(num === 0) { return 1;}
-  else { return num; }
+	for ( var i = num - 1; i > 1; i--){
+		num = num * i;
+	}
+	if(num === 0) { return 1;}
+	else { return num; }
 }
 
 console.log('factorial of ( 5 ): ' + factorial(5));
@@ -116,8 +116,13 @@ console.log('factorial of ( 100 ): ' + factorial(100));
 console.log('factorial of ( 200 ): ' + factorial(200));
 
 
+function rollDice(){
+	return Math.floor(Math.random()*6+1);
+}
 
-
+for(var l = 0; l < 10; l++){
+console.log('You rolled the dice 6 sided dice and got ' + rollDice());
+}
 
 
 
