@@ -120,9 +120,25 @@ function rollDice(){
 	return Math.floor(Math.random()*6+1);
 }
 
-for(var l = 0; l < 10; l++){
-console.log('You rolled the dice 6 sided dice and got ' + rollDice());
+function isPair(roll1, roll2){
+	return roll1 === roll2;
 }
+
+function countPairs(amntRolls){
+	var pairs = 0;
+	for (var o = 0; o < amntRolls; o++){
+		if(isPair(rollDice(), rollDice())){
+			pairs++;
+		}
+	}
+	return pairs;
+}
+
+for(var l = 0; l < 2; l++){
+console.log('Is your dice roll a pair: ' + isPair(rollDice(), rollDice()));
+}
+
+console.log(countPairs(10000));
 
 
 
