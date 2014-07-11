@@ -92,6 +92,31 @@ console.log('The sum of your array is: ' + sum(sumthin));
 
 
 
+/*
+Factorial of 5! is 5*4*3*2*1. Rather than go i++, 
+we need to go backwards. 
+
+You'll notice that num is subtracted by 1.This is because 
+the for loop will start at 5 on the first pass. If we didn't
+do this, then it would be 5*5*4*3*2*1 or it would not be correct.
+
+*/
+function factorial(num) {
+  for ( var i = num - 1; i > 1; i--){
+    num = num * i;
+  }
+  if(num === 0) { return 1;}
+  else { return num; }
+}
+
+console.log('factorial of ( 5 ): ' + factorial(5));
+console.log('factorial of ( 0 ): ' + factorial(0));
+console.log('factorial of ( 100 ): ' + factorial(100));
+//Display Infinity because number is large that 2 to the 53rd power.
+console.log('factorial of ( 200 ): ' + factorial(200));
+
+
+
 
 
 
